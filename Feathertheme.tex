@@ -1,0 +1,220 @@
+
+\documentclass[10pt,xcolor={dvipsnames}]{beamer}
+\usetheme[
+  ]{Feather}
+  
+% If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
+
+% Change the bar colors:
+\setbeamercolor{Feather}{fg=NavyBlue!20,bg=NavyBlue}
+
+% Change the color of the structural elements:
+\setbeamercolor{structure}{fg=NavyBlue}
+
+% Change the frame title text color:
+\setbeamercolor{frametitle}{fg=black!5}
+
+% Change the normal text colors:
+\setbeamercolor{normal text}{fg=black!75,bg=gray!5}
+
+%% Change the block title colors
+\setbeamercolor{block title}{use=Feather,bg=Feather.fg, fg=black!90} 
+
+
+% Change the logo in the upper right circle:
+%\renewcommand{\logofile}{example-grid-100x100pt} 
+%% This is an image that comes with the LaTeX installation
+% Adjust scale of the logo w.r.t. the circle; default is 0.875
+% \renewcommand{\logoscale}{0.55}
+
+% Change the background image on the title and final page.
+% It stretches to fill the entire frame!
+% \renewcommand{\backgroundfile}{example-grid-100x100pt}
+
+%-------------------------------------------------------
+% INCLUDE PACKAGES
+%-------------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+% \usepackage{helvet}
+
+%% Load different font packages to use different fonts
+%% e.g. using Linux Libertine, Linux Biolinum and Inconsolata
+% \usepackage{libertine}
+% \usepackage{zi4}
+
+%% e.g. using Carlito and Caladea
+\usepackage{carlito}
+\usepackage{caladea}
+\usepackage{zi4}
+
+%% e.g. using Venturis ADF Serif and Sans
+% \usepackage{venturis}
+
+%-------------------------------------------------------
+% DEFFINING AND REDEFINING COMMANDS
+%-------------------------------------------------------
+
+% colored hyperlinks
+\newcommand{\chref}[2]{
+  \href{#1}{{\usebeamercolor[bg]{Feather}#2}}
+}
+
+%-------------------------------------------------------
+% INFORMATION IN THE TITLE PAGE
+%-------------------------------------------------------
+
+\title[] % [] is optional - is placed on the bottom of the sidebar on every slide
+{ % is placed on the title page
+      \textbf{Le Développement (Web) Durable}
+}
+
+
+
+\author[Dorine Tabary]
+      {\ttfamily dorine.tabary@univ-fcomte.fr}
+
+
+\institute[]
+{%
+      Université de Franche-Comté\\
+      Sciences et Techniques
+}
+
+\date{\today}
+
+%-------------------------------------------------------
+% THE BODY OF THE PRESENTATION
+%-------------------------------------------------------
+
+\begin{document}
+
+%-------------------------------------------------------
+% THE TITLEPAGE
+%-------------------------------------------------------
+
+{\1% % this is the name of the PDF file for the background
+\begin{frame}[plain,noframenumbering] % the plain option removes the header from the title page, noframenumbering removes the numbering of this frame only
+  \titlepage % call the title page information from above
+\end{frame}}
+
+
+\begin{frame}{Table des matières}{}
+\tableofcontents
+\end{frame}
+
+\section{Le changement climatique}
+\input{chapitre1/chp1}
+\input{chapitre1/mines}
+
+\section{Le Web développement}
+
+%\input{chapitre2/wdd1/chp2}
+%\input{chapitre2/wdd2/chp22}
+%\input{chapitre2/wdd3/chp23}
+%\input{chapitre2/wdd4/chp24}
+%\input{chapitre2/wdd5/chp25}
+%\input{chapitre2/wdd6/chp26}
+%\input{chapitre2/wdd7/chp27}
+\input{chapitre2/wdd8/chp28}
+\input{chapitre2/wdd9/chp29}
+%\input{chapitre2/fin/ccl}
+
+%https://github.com/cnumr/best-practices/blob/main/chapters/BP_095_fr.md
+
+\begin{frame}{Quelle est l'empreinte carbone ? }
+%-------------------------------------------------------
+
+\begin{block}{Tests sur différents sites}
+
+\begin{minipage}[b]{0.5\linewidth}
+\begin{itemize}
+\item \href{https://www.websitecarbon.com/}{Web Carbon Calculator}
+\item \href{https://www.websitecarbon.com/website/univ-fcomte-fr/}{UFR-ST}
+\item \href{https://www.websitecarbon.com/website/mcdonalds-fr/}{McDonald}
+\item \href{https://www.websitecarbon.com/website/biocoop-fr-gclidcj0kcqia-eembhcparisaazfxzcs3nwxf-5givohpm1_79vyloxmb8cff4vai8q_0ymev_jfyixcyoaaav51ealw_wcb/}{Biocoop}
+\item \href{https://www.websitecarbon.com/website/youtube-com/}{Youtube}
+\item \href{https://www.websitecarbon.com/website/9gag-com/}{9gag}
+\item \href{https://www.websitecarbon.com/website/tiktok-com-fr/}{tiktok}
+\item \href{https://www.websitecarbon.com/website/wikipedia-org/}{wikipédia}
+\item \href{https://www.websitecarbon.com/website/amazon-fr/}{amazon}
+
+\item \href{https://www.red-inc.com/}{Optimisation technologique}
+
+\end{itemize}
+
+\end{minipage}\hfill
+\begin{minipage}[b]{0.5\linewidth}  
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.17]{Feathergraphics/int.png}
+\end{figure}
+\end{minipage}\hfill
+\end{block}
+
+\end{frame}
+
+
+
+\section{Conclusion}
+
+
+\begin{frame}{Conclusion}{ Responsabiliser plutôt que culpabiliser}
+%-------------------------------------------------------
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.35]{Feathergraphics/[Outils Méthodo] Triangle de l'inaction.png}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]
+        \frametitle{References}
+        \bibliographystyle{amsalpha}
+        \bibliography{biblio.bib}
+\end{frame}
+
+\begin{frame}{Merci pour votre attention !}
+    		\begin{center}
+	\includegraphics[scale=0.4]{EVE-icon.png}
+	
+	Des Questions ?
+	\end{center}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Impact du numérique}{des exemples d'utilisation polluante}
+
+\begin{figure}[h!]
+
+\begin{minipage}[b]{0.6\linewidth}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.2]{Feathergraphics/mail.png}
+    \end{figure}
+\end{minipage}\hfill
+\begin{minipage}[b]{0.3\linewidth}  
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.17]{Feathergraphics/datacenter.png}
+\end{figure}
+\end{minipage}\hfill
+
+
+\end{figure}
+
+
+\end{frame}
+
+
+
+\end{document}
